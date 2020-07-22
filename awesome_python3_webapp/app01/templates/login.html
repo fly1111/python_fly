@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+{%load static%}
+<html>
+	<head>
+		<title>范林亚的网站</title>
+	<meta charset='UTF-8'>
+	<script src="{% static  '/js/jquery-1.11.1.min.js'%}" ></script>
+	　　<script>
+	$("#valid_img").cilck(function(){
+		$(this)[0].src=$(this)[0].src+"？"})
+</script>
+	</head>
+	<body>
+				
+		<form action="/login/" method="POST" >
+			{% url "login" %}
+			{% csrf_token %}
+			<p>姓名：<input type="text" name="name">
+			<p>密码：<input type="password" name = "pwd">
+			<p><input type="text" name = "valid_num" placeholder="请输入验证码">
+			<img  id="valid_img" src="../statics/images/valid.png" alt="验证码加载异常" height="50px" width="300px">
+			<p><input type="submit" >
+		</form>
+	</body>
+</html>

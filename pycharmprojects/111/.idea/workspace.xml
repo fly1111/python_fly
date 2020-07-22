@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79be7833-df12-4cf8-9138-95cfc4f6d4e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../123/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../123/.idea/123.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../123/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../123/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../123/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../123/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../123/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../awesome_python3_webapp/www/static/hello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ece4bCm0BLGHS81w4p1MtILeUd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79be7833-df12-4cf8-9138-95cfc4f6d4e2" name="Default Changelist" comment="" />
+      <created>1594625117766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594625117766</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% csrf_token %}
+<html>
+  <head>
+  <meta name="content-type" content="text/html; charset=UTF-8">
+    <title>MyHtml.html</title>
+   <link rel="stylesheet" type="text/css" href="/static/css/basic.css">
+   <script language="javascript" src="/static/js/common.js"></script>
+  </head>
+  <body class="body">  
+	  {% url 'TestModel:test' %}
+	  {% url 'hello' year=2322 month=34 %}
+   <h2><a href="index.jsp">返回登录</a></h2>
+   <form action=""name="form1" onSubmit="return check()" method="post" >
+  <table align="center" class="default"  >
+  <tr class="title" >
+  <th colspan="2"><h2>注册信息:</h2></th></tr>
+  <tr>
+  <th class="item"><h1>姓名：</h1></th>
+  <td><input type ="text" name="name" maxlength="5"></td></tr>
+  <tr>
+  <th class="item"><h1>年龄：</h1></th>
+  <td><input type ="text" name="age"maxlength="3"></td></tr>
+  <tr>
+  <th class="item"><h1>性别:</h1></th>
+  <td style="color:red;border:2">
+  <input type="radio" name="sex" value="男" checked="checked"><h3>男</h3>
+  <input type="radio" name="sex" value="女"><h3>女</h3></td></tr>
+
+  <tr>
+  <th><h1>幸运数字：</h1></th>
+  <td >
+  <select name="lucknum">
+   <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>   
+    <option value="6">6</option>
+    <option value="7" selected>7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="0">0</option>             
+ </select></td></tr>
+ <tr>
+    <th class="item"><h1>职业:</h1></th>
+  <td >
+  <input type="radio" name="juese" value="教师"><h3>教师</h3>
+  <input type="radio" name="juese" value="学生" checked="checked"><h3>学生</h3></td></tr>
+ <tr>
+ <th class="item"><h1>密码：</h1></th>
+ <td><input type ="password" name="pwd" size="20"></td></tr>
+ <tr>
+  <th class="item"><h1>确认密码：</h1></th>
+  <td><input type ="password" name="confirm" size="20"></td></tr>
+  <tr>
+  <th class="item"><h1>自我描述：</h1></th>
+  <td colspan="2"><textarea name="des" rows="5" cols="20">自我介绍</textarea>
+  <input type="hidden" name="agree" value="否">
+</td></tr>
+  <tr>
+ <th colspan="2" > 
+ <input type="submit" value="提交" name="submit">
+ <input type="reset" value="重置">
+</th></tr>
+  </table>
+  </form>
+ 
+</body>
+</html>

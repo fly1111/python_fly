@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+ 
+<h3>添加员工</h3>
+ 
+{#1、自己手动写HTML页面#}
+<!--<form action="" method="post">
+    <p>姓名：<input type="text" name="name"></p>
+    <p>年龄：<input type="text" name="age"></p>
+    <p>工资：<input type="text" name="salary"></p>
+    <input type="submit">
+</form>
+--> 
+{#2、通过form对象的as_p方法实现#}
+{#<form action="" method="post" novalidate>#}
+{#    {% csrf_token %}#}
+{#    {{ form.as_p }}#}
+{#    <input type="submit">#}
+{#</form>#}
+ 
+{#3、手动获取form对象的字段#}
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    <div>
+        <label for="id_{{ form.name.name }}">姓名</label>
+        {{ form.name }} <span>{{ form.name.errors.0 }}</span>
+    </div>
+    <div>
+	<label for="id_{{ form.name.name }}">年龄</label>
+        {{ form.age }} <span>{{ form.age.errors.0 }}</span>
+    </div>
+    <div>
+        <label for="id_salary">工资</label>
+        {{ form.salary }} <span>{{ form.salary.errors.0 }}</span>
+    </div>
+    <div>
+	    <label for="id_r_salary">请再输入工资</label>
+	    {{ form.r_salary}} <span>{{form.r_salary.errors.0 }}{{clear_errors.0}}</span>
+    </div>
+    <input type="submit">
+</form>
+ 
+ 
+{#4、用for循环展示所有字段#}
+{#<form action="" method="post" novalidate>#}
+{#    {% csrf_token %}#}
+{#    {% for field in form %}#}
+{#        <div>#}
+{#            <label for="id_{{ field.name }}">{{ field.label }}</label>#}
+{#            {{ field }} <span>{{ field.errors.0 }}</span>#}
+{#        </div>#}
+{#    {% endfor %}#}
+{#    <input type="submit">#}
+{#</form>#}
+ 
+</body>
+</html>
